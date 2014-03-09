@@ -543,6 +543,10 @@ img.groomsmen {
 .weddingWrapper .photoContain {
   width: 500px;
   float: left;
+  margin-right: 1%;
+}
+.weddingWrapper ul.slides {
+  padding-right: 1%;
 }
 .weddingWrapper ul.slides h2 {
   display: table;
@@ -563,8 +567,8 @@ img.groomsmen {
   border-bottom: 2px solid #ffde17;
 }
 .weddingWrapper .flex-caption {
-  margin-left: 500px;
-  padding: 0 4% 0 1%;
+  margin-left: 50%;
+  padding-left: 4%;
 }
 
 /* =============================================================================
@@ -586,31 +590,27 @@ img.groomsmen {
   padding: 1%;
   border-bottom: 2px solid #ffde17;
 }
-.container h2 img {
-  padding: 0 1%;
-  -webkit-transition-property: rotate;
-  -moz-transition-property: rotate;
-  transition-property: rotate;
-  -webkit-transition-duration: 0.4s;
-  -moz-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  -webkit-transition-timing-function: easeOutQuart;
-  -moz-transition-timing-function: easeOutQuart;
-  transition-timing-function: easeOutQuart;
+.container svg {
+  width: 100px;
+  height: 100px;
 }
-.container h2 img.left:hover {
-  -webkit-transform: rotate(-15deg);
-  -moz-transform: rotate(-15deg);
-  -ms-transform: rotate(-15deg);
-  -o-transform: rotate(-15deg);
-  transform: rotate(-15deg);
+.container svg .bow {
+  fill: #E5E5E5;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-.container h2 img.right:hover {
-  -webkit-transform: rotate(15deg);
-  -moz-transform: rotate(15deg);
-  -ms-transform: rotate(15deg);
-  -o-transform: rotate(15deg);
-  transform: rotate(15deg);
+.container svg .box-top {
+  fill: #C1C1C1;
+}
+.container svg .box-bottom {
+  fill: #D8D8D8;
+}
+.container h2:hover .bow {
+  fill: #ffde17;
 }
 .container p {
   color: #949494;
@@ -668,41 +668,70 @@ form header {
   width: 100%;
   padding: 2%;
   background: #f4f4f4;
+  text-align: center;
 }
 .inputWrapper h3, .inputWrapper h4 {
   margin: 1%;
   letter-spacing: -1px;
   color: #f4f4f4;
 }
-.inputWrapper input.wide {
+
+input.wide {
   outline: none;
   border: none;
+  border-bottom: 2px solid #33acb5;
   width: 100%;
   float: left;
   padding: 2%;
-  border-bottom: #33acb5;
+  margin-bottom: 10px;
 }
-.inputWrapper input.wide:focus {
+input.wide:focus {
   color: #33acb5;
 }
-.inputWrapper .field {
+
+.join {
+  clear: both;
   width: 100%;
-  height: 40px;
-  line-height: 30px;
-  padding: 25px;
+  float: left;
+  padding: 0 2%;
+  border-bottom: 2px solid #33ACB5;
   margin-bottom: 10px;
-  outline: none;
-  border: none;
-  transition: all 0.3s ease;
+  background: #fff;
+  text-align: left;
+  color: #aaa;
 }
-.inputWrapper input[type="submit"] {
+.join p {
+  display: inline-block;
+  float: left;
+  margin-right: 2%;
+}
+.join .boxInput {
+  float: left;
+  margin-right: 2%;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label > span {
+  display: inline-block;
+  width: 41px;
+  height: 40px;
+  margin: 6px 30px 0 2px;
+  vertical-align: -15px;
+  background: url(../images/checkbox_sprite.svg) left -40px top no-repeat;
+  cursor: pointer;
+}
+
+input[type="submit"] {
   color: #f4f4f4;
   font-weight: bold;
   border: none;
   background: none;
   outline: none;
 }
-.inputWrapper input[type="submit"] .submitWrapper {
+input[type="submit"] .submitWrapper {
   outline: none;
   border: none;
   color: #33acb5;
