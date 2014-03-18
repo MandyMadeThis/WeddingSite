@@ -1,0 +1,743 @@
+/* =============================================================================
+                           CUSTOM SCROLL BAR & SELECT BG 
+   ========================================================================== */
+
+   ::-webkit-scrollbar { 
+     width: 15px; 
+     height: 15px;
+     background: $white; 
+   }
+      
+   ::-webkit-scrollbar-thumb{
+      height: 10px; 
+      background-color: $blue;
+      border-radius: 3px;
+      }
+
+      ::-webkit-scrollbar-track-piece 
+      { background-color:$white;}
+
+      ::selection {background:$yellow;}
+      ::-moz-selection {background:$yellow;}
+
+
+/* =============================================================================
+   							BODY STARTS HERE
+   ========================================================================== */
+   body{
+   	background: $white; 
+   	font-family: 'Raleway', sans-serif;
+   	font-size: 15px;
+    line-height: 22px;
+    color: $liteblack;
+
+   }
+
+   h1, h2, h3, h4, h5, h6{
+      font-family: 'Ubuntu', sans-serif;
+      letter-spacing:-6px, -2px, -2px, -2px, -1px, -1px; /*better kerning*/
+      text-transform: uppercase;
+      /*line-height: */
+   }
+
+   h2 {
+      color: $drkgrey;
+      font-weight: 700; 
+
+   }
+
+   h3{
+      color: $grey;
+      font-size: 29px;
+      letter-spacing: -2px;
+   }
+
+   h4 {
+      color: $white;
+      font-weight: 700;
+
+   }
+
+   h5{
+      color: $blue;
+
+   }
+
+   a{
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: $blue;
+
+   }
+       /* =============================================================================
+                              NAV IS HERE 
+      ========================================================================== */
+  header{    
+    
+    //responsive nav menu trigger.
+    a.mobilNav{
+      float: right;
+      position: relative;
+      letter-spacing: -1px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $liteblack;
+      z-index: 99999999;
+      color: $blue;
+      display: none;
+    }
+  }
+
+   nav{
+      position: fixed;
+      top: 0;
+      max-width: 1400px;
+      width: 100%;
+      background: $white;
+      text-align: center;
+      padding: 1% 0;
+      @include shadow;
+      z-index: 9999;
+
+        //This is to get rid of browser defult margin/padging on lists
+        ul{
+          margin: 0;
+          padding: 0.3rem 0;
+          text-align: center;
+
+             //next rule gets rid of bullets and displays inline all in one shot
+            li{
+              display: inline-block; 
+              vertical-align: bottom;
+              padding: 0 1.5%;
+              border-bottom: 2px solid rgba($white, 0);//this is so the nav items don't jump up when selected
+            }
+        }
+
+         a{
+          font-size: 1rem;
+          font-family: 'Ubuntu', sans-serif;
+          font-weight: 500;
+          text-transform: uppercase;
+          font-size: 1rem;
+          color: $liteblack;
+          padding-bottom: 6%;
+          }
+   }
+
+   .selected{
+    border-bottom: 2px solid $blue;
+   }
+
+   .navIcon a{
+      top: 0;
+      position: relative;
+      width: 40px;
+      height: 31px;
+      display: inline-block;
+      padding-left: 0;
+      font-size: 0;
+      background: url("../images/yellowRings.svg") no-repeat left bottom;     
+   }
+
+   li.navIcon.selected{
+          border-bottom: 2px solid rgba($white, 1);
+          }
+
+  
+/* =============================================================================
+   								WRAPPER STARTS HERE 
+   ========================================================================== */
+  
+   .cover{
+   width: 100%;
+   padding:12%;
+   background: url("../images/homepagePH.jpg") center center no-repeat fixed;
+   background-size: cover;
+   }
+
+/* =============================================================================
+                           LOGO STARTS HERE 
+   ========================================================================== */
+    .logoWrapper{
+      position: relative;
+      max-width: 500px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+
+        svg{
+         
+          fill:$drkgrey;
+          width: 60px;
+          height: 435px;
+          position: absolute;
+          filter: drop-shadow(0 6px 9px -4px rgba(0, 0, 0, 0.4));
+        }
+    }
+
+   svg.bracket1{  
+      left: 0;
+      -webkit-transform:scale(2);
+      -ms-transform:scale(2);
+      transform:scale(2);
+    }
+
+   svg.bracket2 { /*THE SVG RIGHT CURLY BRACKET*/
+    right: 0;
+    top: 0;
+    transform:scale(2) rotate(180deg);
+    -ms-transform:scale(2) rotate(180deg); 
+    -webkit-transform:scale(2) rotate(180deg);
+   }
+
+
+   .logoWords{
+
+
+      h1{
+        color: $blue;
+        font-size: 75px;
+        letter-spacing: -6px;
+      }
+
+      p{
+        font-size: 31px;
+        letter-spacing: -2px;
+        color: $liteblack;
+      }
+
+
+      h2, h4{
+        font-size: 60px;
+        letter-spacing: -5px;
+      }
+
+      h2{
+        margin-bottom: -22px;
+        margin-top: -10px;
+      }
+
+      h4{
+        margin-top: 44px; 
+        margin-bottom: -10px;
+        @include textshad;
+      }
+
+      h5{
+        font-size: 60px;
+        display: inline-block;
+        margin: 36px 0 45px 0;
+      }
+
+
+   }
+
+/* =============================================================================
+                           STORIES SECTION STARTS HERE 
+   ========================================================================== */
+
+   .storiesContainer{
+      padding: 40px;
+      background: 
+      url(../images/bride_6822.svg) no-repeat left -73px top 20px, 
+      url(../images/groom_6821.svg) no-repeat right -100px top 20px, $white;
+      background-size:515px;
+      
+      h2 {
+        margin: 3px 0; 
+        font-size: 38px;
+        letter-spacing: -3px;
+        line-height: 28px; 
+      }
+
+      h3{
+        margin: 0;
+      }
+   } //end of storiesContainer
+
+   .storyWrapper{
+      max-width: 800px;
+      margin: 0 auto;   
+   }
+
+
+   .brideStory{
+      text-align: right;
+      width: 49%;
+      float: left;
+      margin-right: 1%;
+   }
+
+   .groomStory{
+      width: 49%;
+      float: left;
+      margin-left: 1%;
+   }
+
+   .ourStory{
+      text-align: center;
+      max-width: 800px;
+      margin: 40px auto;
+      background: url("../images/couple_3706.svg") center center no-repeat;
+      background-size: 40%;
+   }
+
+
+
+ /* =============================================================================
+                           START OF PHOTOS SECTION
+   ========================================================================== */
+.photoWrapper{
+   background: url(../images/perpose.svg) repeat fixed;
+   width: 100%;
+   padding: 4% 0.5%;
+   
+}
+
+
+/* =============================================================================
+                           FLEXSLIDER (BOTH)
+   ========================================================================== */
+  .flex-container{
+    
+
+      .flexslider{
+        border: none;
+        margin: 0 auto;
+
+      }
+      .flex-direction-nav a {
+        overflow:visible;
+        color: $yellow;
+      }
+  }
+
+  .weddingWrapper, .photoWrapper{
+        
+    .flexslider{
+      max-width: 950px;
+      width: 100%;
+     
+    }
+
+  }
+
+
+/* =============================================================================
+                           TEAM.html IS HERE 
+   ========================================================================== */
+ .teamPageWrapper{
+    
+    width: 100%;
+    background: url(../images/lights.jpg) center center no-repeat fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+ }
+
+ .teamWrapper{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1%;
+    background: $white;
+    text-align: center;
+ }
+
+ .teamMember{
+    float: left;
+    width: 24%;
+    margin: 0 1% 1% 0;
+    padding: 10px;
+
+      h2{
+         font-size: 25px;
+         letter-spacing: -2px;
+         margin: -21px 0 -10px 0;
+         line-height: 21px;
+      }
+
+      h3{
+         font-size: 19px;
+         margin-top: 3px;
+         line-height: 17px;
+         letter-spacing: -1px;
+      }
+
+      p{
+         text-align: left;
+         line-height: 19px;
+         font-size: 15px;
+      }
+
+      img{
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+      }
+
+ } //end of .teamMember
+
+ img.special{
+    border: 2px solid $yellow;
+ }
+
+ img.bridesmaid{
+    border: 2px solid $pink;
+ }
+
+ img.groomsmen{
+    border: 2px solid $green;
+ }
+
+ .flowergirl .teamMember{
+    float: none;
+    clear: both;
+    width: 50%;
+    margin: 0 auto;
+ }
+
+
+
+ /* =============================================================================
+                      WEDDING SECTION 
+      ========================================================================== */
+
+
+  .weddingWrapper{
+    @include layout;
+    @include linear-gradient(45deg, $colour1 25%, $colour2 25%, $colour2 50%, $colour1 50%, $colour1 75%, $colour2 75%, $colour2);
+    background-size: 150px 150px;
+
+    .flex-container{
+      margin: 3% 0;
+    }
+
+    .flexslider{
+      max-width: 1000px;
+      background:$white;
+    }
+
+    .photoContain{
+      max-width: 500px;
+      float: left;
+      margin-right: 1%;
+    }
+
+    ul.slides{
+      padding-right: 1%;
+      
+      h2{
+          display: table;
+          margin: 2% auto;
+          padding: 1%;
+          font-size: 30px;
+          
+            &.green{
+              border-bottom: 2px solid $green;
+            }
+
+            &.blue{
+              border-bottom: 2px solid $blue;
+            }
+
+            &.pink{
+              border-bottom: 2px solid $pink;
+            }
+
+            &.yellow{
+              border-bottom: 2px solid $yellow;
+            }
+        }
+
+    }
+
+    .flex-caption {
+      margin: 0 0 0 50%;
+      padding: 0 4%
+    }
+
+  }
+ 
+   /* =============================================================================
+                      Registy 
+      ========================================================================== */
+
+.imageWrapper{
+padding: 0.5% 0;
+background: rgba($white, 0.7);
+border-radius: 3%;
+}
+
+
+.container{
+@include layout;
+text-align: center;
+
+
+  h2{
+    display: inline-block;
+    color: $drkgrey;
+    font-size: 40px;
+    letter-spacing: -3px;
+    margin: 0;
+    padding: 1%;
+    border-bottom: 2px solid $yellow;  
+    }
+
+    svg{
+        width: 100px;
+        height: 100px;
+      
+
+          .bow{
+            fill:#E5E5E5;
+            @include transition-property (all);
+            @include transition-duration(0.5s);
+          }
+        
+          .box-top{fill:#C1C1C1;}
+          .box-bottom{fill:#D8D8D8;}
+        
+      } //end of svg
+
+    h2:hover .bow{
+        fill:$yellow;
+    }
+
+
+    p{
+     color: $drkgrey;
+    }
+
+    ul{
+      // display: inline-block;
+      width: 100%;
+      padding: 0;
+      margin: 2% 0;
+    }
+
+    li{
+      list-style-type:none;
+      display: inline-block;
+      padding-right: 2%;
+      @include transition-property (scale);
+      @include transition-duration(0.5s);
+      @include transition-timing-function(easeOutBack);
+
+        &:hover{
+          @include transform(scale(1.2));
+        }
+    }
+
+} //end of container
+
+
+
+/* =============================================================================
+                      RSVP FORM
+
+      ========================================================================== */
+.stripe{
+  @include layout;
+  padding: 0;
+}
+
+.stripe2{
+  @include layout;
+  border-top: 2px solid $pink;
+  border-bottom: 2px solid $green;
+  padding: 25px 0;
+  
+}
+
+.stripe3{
+@include layout;
+border-top: 2px solid $yellow;
+border-bottom: 2px solid $blue;
+padding: 13px 0;
+
+}
+
+.formWrapper{
+  @extend .weddingWrapper;
+
+}
+
+form {
+  width: 60%;
+  margin: 15px auto 40px;
+  border: 0.1px solid #3b3b3d;
+  box-shadow: 0px 0px 11px 3px rgba(65, 56, 56, 0.4);
+
+    header{
+      background: $drkgrey;
+      text-align: center;
+      padding: 2%;
+    }
+
+    h3 {
+      margin:1%;
+      letter-spacing: 0;
+      color: $white;
+    }
+
+} //end of form
+
+.inputWrapper {
+  width: 100%;
+  padding: 2%;
+  background: $white;
+  text-align: center;
+}
+
+input.wide {
+  color: $grey;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid $blue;
+  width: 100%;
+  float: left;
+  padding: 2%;
+  margin-bottom: 10px;
+ 
+
+    &:focus {
+      color: $blue;  
+    }    
+} //end of input.wide
+
+
+.join{
+clear: both;
+width: 100%;
+float: left;
+padding: 0 2%;
+border-bottom: 2px solid #33ACB5;
+margin-bottom: 10px;
+background: #fff;
+text-align: left;
+color: $grey;
+
+    p{
+      display: inline-block;
+      float: left;
+      margin-right: 2%;
+    }
+
+    .boxInput{
+      // margin-right: 2%;
+    }
+
+    &:not(:checked) label{
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 10px;
+      margin-left: 2%;
+    }
+
+    &:not(:checked) input[type="radio"]{
+      display: none;
+      position: relative;
+      left: 50px;
+      top: -20px;
+    }
+
+    &:not(:checked) input[type="radio"] ~ label:after{
+      font-family: FontAwesome;
+      content: "";
+      color: $blue;
+      display:inline-block;
+      width: 33px;
+      height: 33px;
+      border: 1px dashed #CFCFCF;
+      font-size: 28px;
+      vertical-align: middle;
+    }
+
+    &:not(:checked) input[type="radio"]#yes:checked + label:after{
+      content: "\f164";
+    
+    }
+
+    &:not(:checked) input[type="radio"]#no:checked + label:after{
+      content: "\f165";
+      
+    }
+ 
+}//end of join
+
+
+
+.people{
+  @extend .join;
+  width: 49%;
+  margin-right: 2%;
+  padding: 1%; 
+  clear: right;
+  color: $grey;
+
+   select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 25%;
+    margin-top: 3px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    color: $blue;
+    float: right;
+    background: url('../images/aarow.svg') right center no-repeat;
+
+       &:focus {
+        color: $blue;
+        outline: none;  
+      } 
+   }   
+
+}//end of people
+
+.people.last {
+  margin-right: 0;
+}
+
+.nojoin{
+  @extend .join;
+}
+
+.submitWrapper {
+    @extend input.wide;
+    background: $blue;
+  }
+
+input[type="submit"] {
+color: $white;
+border: none;
+text-align: center;
+background: none;
+outline: none;  
+}
+
+/* =============================================================================
+                   Footer 
+   ========================================================================== */
+
+footer{
+  background:$drkgrey;
+  color: $white;
+  padding: 1%;
+  text-align: center;
+    
+    a{
+      color: $yellow;
+    }
+}
+
+
+
+    
+  

@@ -9,7 +9,7 @@
    $yellow: #FFDE17;
    $pink: #F406E5;
    $green: #80DB2F;
-   $grey: #C5C5C5;
+   $grey: #aaa;
    $drkgrey: #949494;
    $litegrey: #F5F4F3;
    $black: #000;
@@ -20,10 +20,10 @@
 
    //layout
    @mixin layout {
-    width: 1400px;
-    max-width: 100%;
+    max-width: 1400px;
+    width: 100%;
     padding: 1%;
-    margin: 0 auto;
+
    
    }
 

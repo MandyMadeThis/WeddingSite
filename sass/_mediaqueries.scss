@@ -1,0 +1,259 @@
+/**/
+
+@media (max-width: 1150px){
+	 .imageWrapper{
+	 	width: 100%;
+
+	      li{
+	      	padding: 1% 4%;
+	      }
+
+		} 
+} // end of media max 1150px
+
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	
+	nav ul a{
+		font-size: .9rem;
+	}
+
+	.teamMember{
+      width: 49%;
+    }
+
+
+	.weddingWrapper{
+	
+		.photoContain{
+		margin-bottom: 3%;
+		}
+
+		  .flexslider{
+		  max-width: 500px;
+		}
+
+		.flex-caption {
+	      margin: 0;
+	      padding: 0 4%
+	    }
+	 
+	}
+
+	.formWrapper{
+
+		form{
+			width: 100%;
+		}
+
+	}
+	
+}//end of media max 940px
+
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	nav ul a{
+		font-size: .8rem;
+	}
+
+	.logoWrapper svg{
+		width: 62px;
+		height: 330px;
+	}
+
+	svg.bracket1,{  
+	   -webkit-transform:scale(1.5);
+	   -ms-transform:scale(1.5);
+	   transform:scale(1.5);
+	}
+
+	svg.bracket2 { /*THE SVG RIGHT CURLY BRACKET*/
+	   right: 0;
+	   top: 0;
+	  transform:scale(1.5) rotate(180deg);
+	-ms-transform:scale(1.5) rotate(180deg); 
+	-webkit-transform:scale(1.5) rotate(180deg);   
+	}
+
+
+	.logoWords{
+
+
+	   h1{
+	     font-size: 60px;
+	     letter-spacing: -5px;
+	     
+	   }
+
+	   p{
+	     font-size: 27px;    
+	   }
+
+
+	   h2, h4{
+	     font-size: 50px;
+	     letter-spacing: -5px;
+	   }
+
+	   h2{
+	     margin-top: -19px;
+	   }
+
+	   h5{
+	     font-size: 50px;
+	     margin: 24px 0 36px 0;
+	   }
+
+
+	}
+
+}//end of media max 768px
+
+
+
+/* Landscape phones and down */
+@media (min-width: 576px) {
+	nav {
+		display: block !important;
+	}
+}
+@media (max-width: 575px) {
+header{
+
+    //responsive nav menu trigger.
+    a.mobilNav{
+    	position: fixed;
+   		display: inline-block;
+   		top: 13px;
+      	right: 40px;
+      	font-size: 18px;
+	}
+
+  }
+
+
+
+nav{
+	   
+ 	ul{
+
+		li{
+	    	display: inline-block; 
+	    	width: 100%;
+	      	vertical-align: middle;
+	      	padding: 1%;
+	
+
+	      		a{
+	      		 font-size: 1rem;
+	      		 }	 	
+		}
+
+ 	}
+ 
+ }
+
+.selected{
+    border-bottom: 2px solid transparent;
+    color: $blue;
+
+   }
+
+.navIcon a{
+   display: none;   
+}
+	
+
+
+	.logoWrapper svg{
+	  height: 279px;
+	  width: 54px;
+	  margin: 0 -2%;
+	}
+
+
+	.logoWords{
+
+
+	   h1{
+	     font-size: 50px;
+	     letter-spacing: -4px;
+	     margin-top: -11px;
+	     
+	   }
+
+	   p{
+	     font-size: 27px;    
+	   }
+
+
+	   h2, h4{
+	     font-size: 34px;
+	     letter-spacing: -3px;
+	   }
+
+	   h2{
+	     margin-bottom: -38px;
+	   }
+
+	   h5{
+	     font-size: 50px;
+	     margin: 24px 0 36px 0;
+	   }
+
+
+	}
+
+	.storiesContainer{
+	   background: 
+      url(../images/bride_6822.svg) no-repeat center top 7%, 
+      url(../images/groom_6821.svg) no-repeat center top 40%; 
+      background-size:100%;
+	}
+
+	.brideStory, .groomStory{
+	   text-align: center;
+	   width: 100%;
+	   float: none;
+	   margin-right: 0;
+	}
+
+	.ourStory{
+		background-size: 100%;
+	}
+
+
+	.teamWrapper{
+		padding: 4% 0;
+	}
+
+	.teamMember, .flowergirl .teamMember{
+      width: 100%;
+
+      p{
+      	text-align:center;
+      }
+    }
+
+	.container{
+	 	svg{
+		    width: 60px;
+		    height: 60px;
+	    }
+
+    	h2{
+    		font-size: 27px;
+    	}
+	}
+
+	form{
+
+		font-size: 13px;
+
+	}
+	
+}//end of  max 575px
