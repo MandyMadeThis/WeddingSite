@@ -1,91 +1,74 @@
 /*normalize*/
-/* line 2, _normalize.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
 
-/* line 2, _normalize.scss */
 audio, canvas, video {
   display: inline-block;
 }
 
-/* line 2, _normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 2, _normalize.scss */
 [hidden] {
   display: none;
 }
 
-/* line 2, _normalize.scss */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-/* line 2, _normalize.scss */
 a:focus {
   outline: thin dotted;
 }
 
-/* line 2, _normalize.scss */
 a:active, a:hover {
   outline: 0;
 }
 
-/* line 2, _normalize.scss */
 h1 {
   font-size: 2em;
 }
 
-/* line 2, _normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 2, _normalize.scss */
 b, strong {
   font-weight: 700;
 }
 
-/* line 2, _normalize.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 2, _normalize.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/* line 2, _normalize.scss */
 code, kbd, pre, samp {
   font-family: monospace, serif;
   font-size: 1em;
 }
 
-/* line 2, _normalize.scss */
 pre {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-/* line 2, _normalize.scss */
 q {
   quotes: \201C \201D \2018 \2019;
 }
 
-/* line 2, _normalize.scss */
 small {
   font-size: 80%;
 }
 
-/* line 2, _normalize.scss */
 sub, sup {
   font-size: 75%;
   line-height: 0;
@@ -93,64 +76,53 @@ sub, sup {
   vertical-align: baseline;
 }
 
-/* line 2, _normalize.scss */
 sup {
   top: -.5em;
 }
 
-/* line 2, _normalize.scss */
 sub {
   bottom: -.25em;
 }
 
-/* line 2, _normalize.scss */
 img {
   border: 0;
 }
 
-/* line 2, _normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 2, _normalize.scss */
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
   padding: .35em .625em .75em;
 }
 
-/* line 2, _normalize.scss */
 button, input, select, textarea {
   font-family: inherit;
   font-size: 100%;
   margin: 0;
 }
 
-/* line 2, _normalize.scss */
 button, input {
   line-height: normal;
 }
 
-/* line 3, _normalize.scss */
 button, html input[type=button],
 input[type=reset], input[type=submit] {
   -webkit-appearance: button;
   cursor: pointer;
 }
 
-/* line 3, _normalize.scss */
 button[disabled], input[disabled] {
   cursor: default;
 }
 
-/* line 3, _normalize.scss */
 input[type=checkbox], input[type=radio] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 3, _normalize.scss */
 input[type=search] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
@@ -158,36 +130,30 @@ input[type=search] {
   box-sizing: content-box;
 }
 
-/* line 3, _normalize.scss */
 input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 3, _normalize.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
 }
 
-/* line 3, _normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 3, _normalize.scss */
 body, figure {
   margin: 0;
 }
 
-/* line 3, _normalize.scss */
 legend, button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
 /*box-sizing*/
-/* line 5, _normalize.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -195,7 +161,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 /*clearfix*/
-/* line 10, _normalize.scss */
 .clearfix:after {
   content: " ";
   visibility: hidden;
@@ -204,7 +169,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clear: both;
 }
 
-/* line 18, _normalize.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -216,31 +180,26 @@ img {
 /* =============================================================================
                            CUSTOM SCROLL BAR & SELECT BG 
    ========================================================================== */
-/* line 5, _base.scss */
 ::-webkit-scrollbar {
   width: 15px;
   height: 15px;
   background: #f4f4f4;
 }
 
-/* line 11, _base.scss */
 ::-webkit-scrollbar-thumb {
   height: 10px;
   background-color: #33acb5;
   border-radius: 3px;
 }
 
-/* line 18, _base.scss */
 ::-webkit-scrollbar-track-piece {
   background-color: #f4f4f4;
 }
 
-/* line 20, _base.scss */
 ::selection {
   background: #ffde17;
 }
 
-/* line 21, _base.scss */
 ::-moz-selection {
   background: #ffde17;
 }
@@ -248,7 +207,6 @@ img {
 /* =============================================================================
    							BODY STARTS HERE
    ========================================================================== */
-/* line 27, _base.scss */
 body {
   background: #f4f4f4;
   font-family: 'Raleway', sans-serif;
@@ -257,7 +215,6 @@ body {
   color: #797979;
 }
 
-/* line 36, _base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Ubuntu', sans-serif;
   letter-spacing: -6px, -2px, -2px, -2px, -1px, -1px;
@@ -266,31 +223,26 @@ h1, h2, h3, h4, h5, h6 {
   /*line-height: */
 }
 
-/* line 43, _base.scss */
 h2 {
   color: #949494;
   font-weight: 700;
 }
 
-/* line 49, _base.scss */
 h3 {
   color: #aaaaaa;
   font-size: 29px;
   letter-spacing: -2px;
 }
 
-/* line 55, _base.scss */
 h4 {
   color: #f4f4f4;
   font-weight: 700;
 }
 
-/* line 61, _base.scss */
 h5 {
   color: #33acb5;
 }
 
-/* line 66, _base.scss */
 a {
   text-decoration: none;
   font-weight: bold;
@@ -301,7 +253,6 @@ a {
  /* =============================================================================
                         NAV IS HERE 
 ========================================================================== */
-/* line 79, _base.scss */
 header a.mobilNav {
   float: right;
   position: relative;
@@ -314,7 +265,6 @@ header a.mobilNav {
   display: none;
 }
 
-/* line 92, _base.scss */
 nav {
   position: fixed;
   top: 0;
@@ -326,20 +276,17 @@ nav {
   box-shadow: 0 6px 9px -4px rgba(0, 0, 0, 0.4);
   z-index: 9999;
 }
-/* line 104, _base.scss */
 nav ul {
   margin: 0;
   padding: 0.3rem 0;
   text-align: center;
 }
-/* line 110, _base.scss */
 nav ul li {
   display: inline-block;
   vertical-align: bottom;
   padding: 0 1.5%;
   border-bottom: 2px solid rgba(244, 244, 244, 0);
 }
-/* line 118, _base.scss */
 nav a {
   font-size: 1rem;
   font-family: 'Ubuntu', sans-serif;
@@ -350,12 +297,10 @@ nav a {
   padding-bottom: 6%;
 }
 
-/* line 129, _base.scss */
 .selected {
   border-bottom: 2px solid #33acb5;
 }
 
-/* line 133, _base.scss */
 .navIcon a {
   top: 0;
   position: relative;
@@ -367,7 +312,6 @@ nav a {
   background: url("../images/yellowRings.svg") no-repeat left bottom;
 }
 
-/* line 144, _base.scss */
 li.navIcon.selected {
   border-bottom: 2px solid #f4f4f4;
 }
@@ -375,7 +319,6 @@ li.navIcon.selected {
 /* =============================================================================
    								WRAPPER STARTS HERE 
    ========================================================================== */
-/* line 153, _base.scss */
 .cover {
   width: 100%;
   padding: 12%;
@@ -386,7 +329,6 @@ li.navIcon.selected {
 /* =============================================================================
                            LOGO STARTS HERE 
    ========================================================================== */
-/* line 163, _base.scss */
 .logoWrapper {
   position: relative;
   max-width: 500px;
@@ -394,7 +336,6 @@ li.navIcon.selected {
   margin: 0 auto;
   text-align: center;
 }
-/* line 170, _base.scss */
 .logoWrapper svg {
   fill: #949494;
   width: 60px;
@@ -403,7 +344,6 @@ li.navIcon.selected {
   filter: drop-shadow(0 6px 9px -4px rgba(0, 0, 0, 0.4));
 }
 
-/* line 180, _base.scss */
 svg.bracket1 {
   left: 0;
   -webkit-transform: scale(2);
@@ -411,7 +351,6 @@ svg.bracket1 {
   transform: scale(2);
 }
 
-/* line 187, _base.scss */
 svg.bracket2 {
   /*THE SVG RIGHT CURLY BRACKET*/
   right: 0;
@@ -421,35 +360,29 @@ svg.bracket2 {
   -webkit-transform: scale(2) rotate(180deg);
 }
 
-/* line 199, _base.scss */
 .logoWords h1 {
   color: #33acb5;
   font-size: 75px;
   letter-spacing: -6px;
 }
-/* line 205, _base.scss */
 .logoWords p {
   font-size: 31px;
   letter-spacing: -2px;
   color: #797979;
 }
-/* line 212, _base.scss */
 .logoWords h2, .logoWords h4 {
   font-size: 60px;
   letter-spacing: -5px;
 }
-/* line 217, _base.scss */
 .logoWords h2 {
   margin-bottom: -22px;
   margin-top: -10px;
 }
-/* line 222, _base.scss */
 .logoWords h4 {
   margin-top: 44px;
   margin-bottom: -10px;
   text-shadow: rgba(0, 0, 0, 0.38) 1.5px 1.5px 2.5px;
 }
-/* line 228, _base.scss */
 .logoWords h5 {
   font-size: 60px;
   display: inline-block;
@@ -459,31 +392,26 @@ svg.bracket2 {
 /* =============================================================================
                            STORIES SECTION STARTS HERE 
    ========================================================================== */
-/* line 241, _base.scss */
 .storiesContainer {
   padding: 40px;
   background: url(../images/bride_6822.svg) no-repeat left -73px top 20px, url(../images/groom_6821.svg) no-repeat right -100px top 20px, #f4f4f4;
   background-size: 515px;
 }
-/* line 248, _base.scss */
 .storiesContainer h2 {
   margin: 3px 0;
   font-size: 38px;
   letter-spacing: -3px;
   line-height: 28px;
 }
-/* line 255, _base.scss */
 .storiesContainer h3 {
   margin: 0;
 }
 
-/* line 260, _base.scss */
 .storyWrapper {
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* line 266, _base.scss */
 .brideStory {
   text-align: right;
   width: 49%;
@@ -491,14 +419,12 @@ svg.bracket2 {
   margin-right: 1%;
 }
 
-/* line 273, _base.scss */
 .groomStory {
   width: 49%;
   float: left;
   margin-left: 1%;
 }
 
-/* line 279, _base.scss */
 .ourStory {
   text-align: center;
   max-width: 800px;
@@ -510,7 +436,6 @@ svg.bracket2 {
 /* =============================================================================
                           START OF PHOTOS SECTION
   ========================================================================== */
-/* line 292, _base.scss */
 .photoWrapper {
   background: url(../images/perpose.svg) repeat fixed;
   width: 100%;
@@ -520,18 +445,15 @@ svg.bracket2 {
 /* =============================================================================
                            FLEXSLIDER (BOTH)
    ========================================================================== */
-/* line 306, _base.scss */
 .flex-container .flexslider {
   border: none;
   margin: 0 auto;
 }
-/* line 311, _base.scss */
 .flex-container .flex-direction-nav a {
   overflow: visible;
   color: #ffde17;
 }
 
-/* line 319, _base.scss */
 .weddingWrapper .flexslider, .formWrapper .flexslider, .photoWrapper .flexslider {
   max-width: 950px;
   width: 100%;
@@ -540,7 +462,6 @@ svg.bracket2 {
 /* =============================================================================
                            TEAM.html IS HERE 
    ========================================================================== */
-/* line 331, _base.scss */
 .teamPageWrapper {
   width: 100%;
   background: url(../images/lights.jpg) center center no-repeat fixed;
@@ -548,7 +469,6 @@ svg.bracket2 {
   background-size: cover;
 }
 
-/* line 339, _base.scss */
 .teamWrapper {
   width: 90%;
   margin: 0 auto;
@@ -557,56 +477,47 @@ svg.bracket2 {
   text-align: center;
 }
 
-/* line 347, _base.scss */
 .teamMember {
   float: left;
   width: 24%;
   margin: 0 1% 1% 0;
   padding: 10px;
 }
-/* line 353, _base.scss */
 .teamMember h2 {
   font-size: 25px;
   letter-spacing: -2px;
   margin: -21px 0 -10px 0;
   line-height: 21px;
 }
-/* line 360, _base.scss */
 .teamMember h3 {
   font-size: 19px;
   margin-top: 3px;
   line-height: 17px;
   letter-spacing: -1px;
 }
-/* line 367, _base.scss */
 .teamMember p {
   text-align: left;
   line-height: 19px;
   font-size: 15px;
 }
-/* line 373, _base.scss */
 .teamMember img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
 
-/* line 381, _base.scss */
 img.special {
   border: 2px solid #ffde17;
 }
 
-/* line 385, _base.scss */
 img.bridesmaid {
   border: 2px solid #f406e5;
 }
 
-/* line 389, _base.scss */
 img.groomsmen {
   border: 2px solid #80db2f;
 }
 
-/* line 393, _base.scss */
 .flowergirl .teamMember {
   float: none;
   clear: both;
@@ -617,7 +528,6 @@ img.groomsmen {
 /* =============================================================================
                      WEDDING SECTION 
      ========================================================================== */
-/* line 407, _base.scss */
 .weddingWrapper, .formWrapper {
   max-width: 1400px;
   width: 100%;
@@ -628,49 +538,39 @@ img.groomsmen {
   background-image: linear-gradient(45deg,#f5f4f3 25%, #f0f0f0 25%, #f0f0f0 50%, #f5f4f3 50%, #f5f4f3 75%, #f0f0f0 75%, #f0f0f0);
   background-size: 150px 150px;
 }
-/* line 412, _base.scss */
 .weddingWrapper .flex-container, .formWrapper .flex-container {
   margin: 3% 0;
 }
-/* line 416, _base.scss */
 .weddingWrapper .flexslider, .formWrapper .flexslider {
   max-width: 1000px;
   background: #f4f4f4;
 }
-/* line 421, _base.scss */
 .weddingWrapper .photoContain, .formWrapper .photoContain {
   max-width: 500px;
   float: left;
   margin-right: 1%;
 }
-/* line 427, _base.scss */
 .weddingWrapper ul.slides, .formWrapper ul.slides {
   padding-right: 1%;
 }
-/* line 430, _base.scss */
 .weddingWrapper ul.slides h2, .formWrapper ul.slides h2 {
   display: table;
   margin: 2% auto;
   padding: 1%;
   font-size: 30px;
 }
-/* line 436, _base.scss */
 .weddingWrapper ul.slides h2.green, .formWrapper ul.slides h2.green {
   border-bottom: 2px solid #80db2f;
 }
-/* line 440, _base.scss */
 .weddingWrapper ul.slides h2.blue, .formWrapper ul.slides h2.blue {
   border-bottom: 2px solid #33acb5;
 }
-/* line 444, _base.scss */
 .weddingWrapper ul.slides h2.pink, .formWrapper ul.slides h2.pink {
   border-bottom: 2px solid #f406e5;
 }
-/* line 448, _base.scss */
 .weddingWrapper ul.slides h2.yellow, .formWrapper ul.slides h2.yellow {
   border-bottom: 2px solid #ffde17;
 }
-/* line 455, _base.scss */
 .weddingWrapper .flex-caption, .formWrapper .flex-caption {
   margin: 0 0 0 50%;
   padding: 0 4%;
@@ -679,21 +579,18 @@ img.groomsmen {
 /* =============================================================================
                    Registy 
    ========================================================================== */
-/* line 466, _base.scss */
 .imageWrapper {
   padding: 0.5% 0;
   background: rgba(244, 244, 244, 0.7);
   border-radius: 3%;
 }
 
-/* line 473, _base.scss */
 .container {
   max-width: 1400px;
   width: 100%;
   padding: 1%;
   text-align: center;
 }
-/* line 478, _base.scss */
 .container h2 {
   display: inline-block;
   color: #949494;
@@ -703,12 +600,10 @@ img.groomsmen {
   padding: 1%;
   border-bottom: 2px solid #ffde17;
 }
-/* line 488, _base.scss */
 .container svg {
   width: 100px;
   height: 100px;
 }
-/* line 493, _base.scss */
 .container svg .bow {
   fill: #E5E5E5;
   -webkit-transition-property: all;
@@ -718,29 +613,23 @@ img.groomsmen {
   -moz-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 499, _base.scss */
 .container svg .box-top {
   fill: #C1C1C1;
 }
-/* line 500, _base.scss */
 .container svg .box-bottom {
   fill: #D8D8D8;
 }
-/* line 504, _base.scss */
 .container h2:hover .bow {
   fill: #ffde17;
 }
-/* line 509, _base.scss */
 .container p {
   color: #949494;
 }
-/* line 513, _base.scss */
 .container ul {
   width: 100%;
   padding: 0;
   margin: 2% 0;
 }
-/* line 520, _base.scss */
 .container li {
   list-style-type: none;
   display: inline-block;
@@ -755,7 +644,6 @@ img.groomsmen {
   -moz-transition-timing-function: easeOutBack;
   transition-timing-function: easeOutBack;
 }
-/* line 528, _base.scss */
 .container li:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -768,7 +656,6 @@ img.groomsmen {
                       RSVP FORM
 
       ========================================================================== */
-/* line 541, _base.scss */
 .stripe {
   max-width: 1400px;
   width: 100%;
@@ -776,7 +663,6 @@ img.groomsmen {
   padding: 0;
 }
 
-/* line 546, _base.scss */
 .stripe2 {
   max-width: 1400px;
   width: 100%;
@@ -786,7 +672,6 @@ img.groomsmen {
   padding: 25px 0;
 }
 
-/* line 554, _base.scss */
 .stripe3 {
   max-width: 1400px;
   width: 100%;
@@ -796,27 +681,23 @@ img.groomsmen {
   padding: 13px 0;
 }
 
-/* line 567, _base.scss */
 form {
   width: 60%;
   margin: 15px auto 40px;
   border: 0.1px solid #3b3b3d;
   box-shadow: 0px 0px 11px 3px rgba(65, 56, 56, 0.4);
 }
-/* line 573, _base.scss */
 form header {
   background: #949494;
   text-align: center;
   padding: 2%;
 }
-/* line 579, _base.scss */
 form h3 {
   margin: 1%;
   letter-spacing: 0;
   color: #f4f4f4;
 }
 
-/* line 587, _base.scss */
 .inputWrapper {
   width: 100%;
   padding: 2%;
@@ -824,7 +705,6 @@ form h3 {
   text-align: center;
 }
 
-/* line 594, _base.scss */
 input.wide, .submitWrapper {
   color: #aaaaaa;
   outline: none;
@@ -835,12 +715,10 @@ input.wide, .submitWrapper {
   padding: 2%;
   margin-bottom: 10px;
 }
-/* line 605, _base.scss */
 input.wide:focus, .submitWrapper:focus {
   color: #33acb5;
 }
 
-/* line 611, _base.scss */
 .join, .people, .nojoin {
   clear: both;
   width: 100%;
@@ -852,27 +730,23 @@ input.wide:focus, .submitWrapper:focus {
   text-align: left;
   color: #aaaaaa;
 }
-/* line 622, _base.scss */
 .join p, .people p, .nojoin p {
   display: inline-block;
   float: left;
   margin-right: 2%;
 }
-/* line 632, _base.scss */
 .join:not(:checked) label, .people:not(:checked) label, .nojoin:not(:checked) label {
   cursor: pointer;
   display: inline-block;
   margin-top: 10px;
   margin-left: 2%;
 }
-/* line 639, _base.scss */
 .join:not(:checked) input[type="radio"], .people:not(:checked) input[type="radio"], .nojoin:not(:checked) input[type="radio"] {
   display: none;
   position: relative;
   left: 50px;
   top: -20px;
 }
-/* line 646, _base.scss */
 .join:not(:checked) input[type="radio"] ~ label:after, .people:not(:checked) input[type="radio"] ~ label:after, .nojoin:not(:checked) input[type="radio"] ~ label:after {
   font-family: FontAwesome;
   content: "";
@@ -884,16 +758,13 @@ input.wide:focus, .submitWrapper:focus {
   font-size: 28px;
   vertical-align: middle;
 }
-/* line 658, _base.scss */
 .join:not(:checked) input[type="radio"]#yes:checked + label:after, .people:not(:checked) input[type="radio"]#yes:checked + label:after, .nojoin:not(:checked) input[type="radio"]#yes:checked + label:after {
   content: "\f164";
 }
-/* line 663, _base.scss */
 .join:not(:checked) input[type="radio"]#no:checked + label:after, .people:not(:checked) input[type="radio"]#no:checked + label:after, .nojoin:not(:checked) input[type="radio"]#no:checked + label:after {
   content: "\f165";
 }
 
-/* line 672, _base.scss */
 .people {
   width: 49%;
   margin-right: 2%;
@@ -901,7 +772,6 @@ input.wide:focus, .submitWrapper:focus {
   clear: right;
   color: #aaaaaa;
 }
-/* line 680, _base.scss */
 .people select {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -918,23 +788,19 @@ input.wide:focus, .submitWrapper:focus {
   float: right;
   background: url("../images/aarow.svg") right center no-repeat;
 }
-/* line 696, _base.scss */
 .people select:focus {
   color: #33acb5;
   outline: none;
 }
 
-/* line 704, _base.scss */
 .people.last {
   margin-right: 0;
 }
 
-/* line 712, _base.scss */
 .submitWrapper {
   background: #33acb5;
 }
 
-/* line 717, _base.scss */
 input[type="submit"] {
   color: #f4f4f4;
   border: none;
@@ -946,81 +812,67 @@ input[type="submit"] {
 /* =============================================================================
                    Footer 
    ========================================================================== */
-/* line 729, _base.scss */
 footer {
   background: #949494;
   color: #f4f4f4;
   padding: 1%;
   text-align: center;
 }
-/* line 735, _base.scss */
 footer a {
   color: #ffde17;
 }
 
 /**/
 @media (max-width: 1150px) {
-  /* line 4, _mediaqueries.scss */
   .imageWrapper {
     width: 100%;
   }
-  /* line 7, _mediaqueries.scss */
   .imageWrapper li {
     padding: 1% 4%;
   }
 }
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-  /* line 19, _mediaqueries.scss */
   nav ul a {
     font-size: .9rem;
   }
 
-  /* line 23, _mediaqueries.scss */
   .teamMember {
     width: 49%;
   }
 
-  /* line 30, _mediaqueries.scss */
   .weddingWrapper .photoContain, .formWrapper .photoContain {
     margin-bottom: 3%;
   }
-  /* line 34, _mediaqueries.scss */
   .weddingWrapper .flexslider, .formWrapper .flexslider {
     max-width: 500px;
   }
-  /* line 38, _mediaqueries.scss */
   .weddingWrapper .flex-caption, .formWrapper .flex-caption {
     margin: 0;
     padding: 0 4%;
   }
 
-  /* line 47, _mediaqueries.scss */
   .formWrapper form {
     width: 100%;
   }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-  /* line 59, _mediaqueries.scss */
   nav ul a {
     font-size: .8rem;
   }
 
-  /* line 63, _mediaqueries.scss */
   .logoWrapper svg {
     width: 62px;
     height: 330px;
   }
 
-  /* line 68, _mediaqueries.scss */
   svg.bracket1 {
     -webkit-transform: scale(1.5);
     -ms-transform: scale(1.5);
     transform: scale(1.5);
   }
 
-  /* line 74, _mediaqueries.scss */
   svg.bracket2 {
     /*THE SVG RIGHT CURLY BRACKET*/
     right: 0;
@@ -1030,25 +882,20 @@ footer a {
     -webkit-transform: scale(1.5) rotate(180deg);
   }
 
-  /* line 86, _mediaqueries.scss */
   .logoWords h1 {
     font-size: 60px;
     letter-spacing: -5px;
   }
-  /* line 92, _mediaqueries.scss */
   .logoWords p {
     font-size: 27px;
   }
-  /* line 97, _mediaqueries.scss */
   .logoWords h2, .logoWords h4 {
     font-size: 50px;
     letter-spacing: -5px;
   }
-  /* line 102, _mediaqueries.scss */
   .logoWords h2 {
     margin-top: -19px;
   }
-  /* line 106, _mediaqueries.scss */
   .logoWords h5 {
     font-size: 50px;
     margin: 24px 0 36px 0;
@@ -1056,13 +903,11 @@ footer a {
 }
 /* Landscape phones and down */
 @media (min-width: 576px) {
-  /* line 120, _mediaqueries.scss */
   nav {
     display: block !important;
   }
 }
 @media (max-width: 575px) {
-  /* line 128, _mediaqueries.scss */
   header a.mobilNav {
     position: fixed;
     display: inline-block;
@@ -1071,68 +916,56 @@ footer a {
     font-size: 18px;
   }
 
-  /* line 144, _mediaqueries.scss */
   nav ul li {
     display: inline-block;
     width: 100%;
     vertical-align: middle;
     padding: 1%;
   }
-  /* line 151, _mediaqueries.scss */
   nav ul li a {
     font-size: 1rem;
   }
 
-  /* line 160, _mediaqueries.scss */
   .selected {
     border-bottom: 2px solid transparent;
     color: #33acb5;
   }
 
-  /* line 166, _mediaqueries.scss */
   .navIcon a {
     display: none;
   }
 
-  /* line 172, _mediaqueries.scss */
   .logoWrapper svg {
     height: 279px;
     width: 54px;
     margin: 0 -2%;
   }
 
-  /* line 182, _mediaqueries.scss */
   .logoWords h1 {
     font-size: 50px;
     letter-spacing: -4px;
     margin-top: -11px;
   }
-  /* line 189, _mediaqueries.scss */
   .logoWords p {
     font-size: 27px;
   }
-  /* line 194, _mediaqueries.scss */
   .logoWords h2, .logoWords h4 {
     font-size: 34px;
     letter-spacing: -3px;
   }
-  /* line 199, _mediaqueries.scss */
   .logoWords h2 {
     margin-bottom: -38px;
   }
-  /* line 203, _mediaqueries.scss */
   .logoWords h5 {
     font-size: 50px;
     margin: 24px 0 36px 0;
   }
 
-  /* line 211, _mediaqueries.scss */
   .storiesContainer {
     background: url(../images/bride_6822.svg) no-repeat center top 7%, url(../images/groom_6821.svg) no-repeat center top 40%;
     background-size: 100%;
   }
 
-  /* line 218, _mediaqueries.scss */
   .brideStory, .groomStory {
     text-align: center;
     width: 100%;
@@ -1140,36 +973,29 @@ footer a {
     margin-right: 0;
   }
 
-  /* line 225, _mediaqueries.scss */
   .ourStory {
     background-size: 100%;
   }
 
-  /* line 230, _mediaqueries.scss */
   .teamWrapper {
     padding: 4% 0;
   }
 
-  /* line 234, _mediaqueries.scss */
   .teamMember, .flowergirl .teamMember {
     width: 100%;
   }
-  /* line 237, _mediaqueries.scss */
   .teamMember p, .flowergirl .teamMember p {
     text-align: center;
   }
 
-  /* line 243, _mediaqueries.scss */
   .container svg {
     width: 60px;
     height: 60px;
   }
-  /* line 248, _mediaqueries.scss */
   .container h2 {
     font-size: 27px;
   }
 
-  /* line 253, _mediaqueries.scss */
   form {
     font-size: 13px;
   }
